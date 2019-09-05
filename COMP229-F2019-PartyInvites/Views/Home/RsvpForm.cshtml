@@ -1,0 +1,41 @@
+﻿@model  COMP229_F2019_PartyInvites.Models.GuestResponse
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>RsvpForm</title>
+</head>
+<body>
+    <form asp-action="RsvpForm" method="post">
+        <div>
+            <label asp-for="Name">Your Name:</label>
+            <input asp-for="Name" />
+        </div>
+        <div>
+            <label asp-for="Email">Your e-mail:</label>
+            <input asp-for="Email" />
+        </div>
+        <div>
+            <label asp-for="Phone">Your phone:</label>
+            <input asp-for="Phone" />
+        </div>
+        <div>
+            <label asp-for="WillAtttend">Will you attend?</label>
+            <select as-for="WillAttend">
+                <option value="">Choose an option</option>
+                <option value="true">Yes, I'll be there</option>
+                <option value="false">No, I can't come</option>
+            </select>
+        </div>
+        <div>
+            <button type="submit">Submit RSVP</button>
+        </div>
+    </form>
+</body>
+</html>
