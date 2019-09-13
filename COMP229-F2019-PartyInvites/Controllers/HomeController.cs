@@ -26,7 +26,7 @@ namespace COMP229_F2019_PartyInvites.Controllers
         public ViewResult RsvpForm(GuestResponse guestResponse)
         {
             Repository.AddResponse(guestResponse);
-            return View();
+            return View("Thanks", guestResponse);
         }
 
     }

@@ -10,6 +10,6 @@ namespace COMP229_F2019_PartyInvites.Models
         public string Name { get; set; }
         public string Email { get; set; }
         public string Phone { get; set; }
-        public bool? WillAtttend { get; set; }
+        public bool? WillAttend { get; set; }
     }
 }
