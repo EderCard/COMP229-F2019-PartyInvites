@@ -26,8 +26,10 @@ namespace COMP229_F2019_PartyInvites
                 app.UseDeveloperExceptionPage();
             }
 
+            //wwwroot folder
+            app.UseStaticFiles();
+
             app.UseMvcWithDefaultRoute();
-            
         }
     }
 }

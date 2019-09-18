@@ -9,15 +9,18 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Party Invites</title>
+    <link rel="stylesheet" href="/lib/boostrap/css/bootstrap.min.css" />
 </head>
 <body>
-    <h1>Party Invites</h1>
-    <h2>
-        @ViewBag.Greeting World (from view)
-    </h2>
-    <h3>We're going to hava an exciting party!</h3>
-    <h4>And you are invited</h4>
-    
-    <a asp-action="RsvpForm">RSVP Form</a>
+    <div class="text-center">
+        <h1>Party Invites</h1>
+        <h2>
+            @ViewBag.Greeting World (from view)
+        </h2>
+        <h3>We're going to hava an exciting party!</h3>
+        <h4>And you are invited</h4>
+
+        <a class="btn btn-primary" asp-action="RsvpForm">RSVP Form</a>
+    </div>
 </body>
 </html>
